@@ -1,7 +1,7 @@
 import { db } from "../db.js";
 
 export const loadAppData = (req, res) => {
-  const hostname = req.headers.host.split(`:`)[0];
+  const hostname = req.body.hostname;
   console.log(hostname);
 
   const query = `SELECT color_palette.* , hospital.* FROM hospital

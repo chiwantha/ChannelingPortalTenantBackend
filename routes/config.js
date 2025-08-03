@@ -3,6 +3,6 @@ import { loadAppData } from "../controller/configs.js";
 
 const routes = express.Router();
 
-routes.get("/appData", loadAppData);
+routes.post("/appData", loadAppData);
 
 export default routes;
